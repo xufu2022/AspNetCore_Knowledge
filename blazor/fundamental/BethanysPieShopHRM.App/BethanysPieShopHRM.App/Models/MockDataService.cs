@@ -56,7 +56,7 @@ namespace BethanysPieShopHRM.App.Models
                 Email = "gill@bethanyspieshop.com",
                 EmployeeId = 2,
                 FirstName = "Gill",
-                LastName = "Cleeren",
+                LastName = string.Empty,
                 Gender = Gender.Female,
                 PhoneNumber = "33999909923",
                 Smoker = false,
@@ -71,7 +71,30 @@ namespace BethanysPieShopHRM.App.Models
                 CountryId = _countries[1].CountryId
             };
 
-            return new List<Employee>() { e1, e2 };
+            var e3 = new Employee
+            {
+                MaritalStatus = MaritalStatus.Married,
+                BirthDate = new DateTime(1979, 1, 16),
+                City = "Antwerp",
+                Email = "gill@bethanyspieshop.com",
+                EmployeeId = 2,
+                FirstName = "Jane",
+                LastName = String.Empty,
+                Gender = Gender.Female,
+                PhoneNumber = "33999909923",
+                Smoker = false,
+                Street = "New Street",
+                Zip = "2000",
+                JobCategory = _jobCategories[1],
+                JobCategoryId = _jobCategories[1].JobCategoryId,
+                Comment = "Lorem Ipsum",
+                ExitDate = null,
+                JoinedDate = new DateTime(2017, 12, 24),
+                Country = _countries[1],
+                CountryId = _countries[1].CountryId
+            };
+
+            return new List<Employee>() { e1, e2, e3 };
         }
 
         private static List<JobCategory> InitializeMockJobCategories()
