@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.10" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
@@ -25,7 +24,6 @@
     <_ContentIncludedByDefault Remove="Components\InboxCounter.razor" />
     <_ContentIncludedByDefault Remove="Components\ProfilePicture.razor" />
     <_ContentIncludedByDefault Remove="Pages\EmployeeDetail.razor" />
-    <_ContentIncludedByDefault Remove="Pages\EmployeeEdit.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,16 +36,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helper\" />
     <Folder Include="State\" />
   </ItemGroup>
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Components\InboxCounter.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\EmployeeEdit.razor" />
   </ItemGroup>
 
 </Project>
